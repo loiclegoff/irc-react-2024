@@ -4,7 +4,7 @@ The essential guide to getting started with React. This walkthrough tutorial wil
 
 ### Prerequisites
 
-- Basic familiarity with [HTML & CSS](https://internetingishard.com/).
+- Basic familiarity with [HTML & CSS](https://internetingishard.netlify.app/html-and-css/).
 - Basic knowledge of [JavaScript](https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript) and programming.
 - Basic understanding of [the DOM](https://www.taniarascia.com/introduction-to-the-dom/).
 - Familiarity with [ES6 syntax and features](https://www.taniarascia.com/es6-syntax-and-feature-overview/).
@@ -29,8 +29,8 @@ Let's start by making a basic `index.html` file. We're going to load in three CD
 
     <title>Hello React!</title>
 
-    <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
   </head>
 
@@ -46,8 +46,7 @@ Let's start by making a basic `index.html` file. We're going to load in three CD
 
 I'm loading in the latest stable versions of the libraries as of the time of this writing.
 
-- [React](https://reactjs.org/docs/react-api.html) - the React top level API
-- [React DOM](https://reactjs.org/docs/react-dom.html) - adds DOM-specific methods
+- [React](https://react.dev/reference/react) - the offical React documentation
 - [Babel](https://babeljs.io/) - a JavaScript compiler that lets us use ES6+ in old browsers
 
 The entry point for our app will be the `root` div element, which is named by convention. You'll also notice the `text/babel` script type, which is mandatory for using Babel.
@@ -104,8 +103,8 @@ index.html
 
     <title>Hello React!</title>
 
-    <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
   </head>
 
@@ -129,7 +128,7 @@ Now if you view your `index.html` in the browser, you'll see the `h1` tag we cre
 
 ### Create your app folder
 
-- Use the github template : https://github.com/loiclegoff/irc-react-2023 with your githuh account
+- Use the github template : https://github.com/loiclegoff/irc-react-2024 with your githuh account
 - Checkout locally your repo : `git clone xxx`
 
 ```shell
@@ -212,7 +211,7 @@ Modify `index.js` and `App.js` to:
 
 ## Correction proposal
 
-- [branch](https://github.com/loiclegoff/my-app-function-component/tree/step0-first_app)
+- [branch](https://github.com/loiclegoff/irc-react-2024-correction/tree/step0-first_app)
 
 # Step 1 : use bootstrap components
 
@@ -232,8 +231,8 @@ Others components : https://getbootstrap.com/docs/5.3/components/alerts/
 
 ## Correction proposal
 
-- [branch](https://github.com/loiclegoff/my-app-function-component/tree/step1-first_app_with_bootstrap_components)
-- [difference with previous step](https://github.com/loiclegoff/my-app-function-component/compare/step0-first_app...step1-first_app_with_bootstrap_components?diff=split)
+- [branch](https://github.com/loiclegoff/irc-react-2024-correction/tree/step1-first_app_with_bootstrap_components)
+- [difference with previous step](https://github.com/loiclegoff/irc-react-2024-correction/compare/step0-first_app...step1-first_app_with_bootstrap_components?diff=split)
 
 # Step 2 : 1 robot
 
@@ -269,8 +268,8 @@ To do :
 
 ## Correction proposal
 
-- [branch](https://github.com/loiclegoff/my-app-function-component/tree/step2-1_robot_img_video)
-- [difference with the previous step](https://github.com/loiclegoff/my-app-function-component/compare/step1-first_app_with_bootstrap_components...step2-1_robot_img_video?diff=split)
+- [branch](https://github.com/loiclegoff/irc-react-2024-correction/tree/step2-1_robot_img_video)
+- [difference with the previous step](https://github.com/loiclegoff/irc-react-2024-correction/compare/step1-first_app_with_bootstrap_components...step2-1_robot_img_video?diff=split)
 
 # Step 3 : list robots
 
@@ -278,8 +277,8 @@ Update one component to show all robots
 
 ## Correction proposal
 
-- [branch](https://github.com/loiclegoff/my-app-function-component/tree/step3-list_of_robots_img_video)
-- [difference with the previous step](https://github.com/loiclegoff/my-app-function-component/compare/step2-1_robot_img_video...step3-list_of_robots_img_video?diff=split)
+- [branch](https://github.com/loiclegoff/irc-react-2024-correction/tree/step3-list_of_robots_img_video)
+- [difference with the previous step](https://github.com/loiclegoff/irc-react-2024-correction/compare/step2-1_robot_img_video...step3-list_of_robots_img_video?diff=split)
 
 # Step 4 : list robots and associated parts
 
@@ -333,13 +332,13 @@ You can re-use Price and Visual components
 
 ## Correction proposal
 
-- [branch](https://github.com/loiclegoff/my-app-function-component/tree/step4-list_of_robots_with_related_parts)
-- [difference with the previous step](https://github.com/loiclegoff/my-app-function-component/compare/step3-list_of_robots_img_video...step4-list_of_robots_with_related_parts?diff=split)
+- [branch](https://github.com/loiclegoff/irc-react-2024-correction/tree/step4-list_of_robots_with_related_parts)
+- [difference with the previous step](https://github.com/loiclegoff/irc-react-2024-correction/compare/step3-list_of_robots_img_video...step4-list_of_robots_with_related_parts?diff=split)
 
 ### With others features
 
-- [branch](https://github.com/loiclegoff/my-app-function-component/tree/step4bis-list_of_robots_with_related_parts_and_right_panel)
-- [difference](https://github.com/loiclegoff/my-app-function-component/compare/step4-list_of_robots_with_related_parts...step4bis-list_of_robots_with_related_parts_and_right_panel?diff=split)
+- [branch](https://github.com/loiclegoff/irc-react-2024-correction/tree/step4bis-list_of_robots_with_related_parts_and_right_panel)
+- [difference](https://github.com/loiclegoff/irc-react-2024-correction/compare/step4-list_of_robots_with_related_parts...step4bis-list_of_robots_with_related_parts_and_right_panel?diff=split)
 
 # Step 5 : list robots and associated parts with redux
 
@@ -457,15 +456,15 @@ const Component = () => {
 
 ## Correction proposal
 
-- [branch](https://github.com/loiclegoff/my-app-function-component/tree/step5-list_of_robots_with_related_parts_redux)
-- [difference with the previous step](https://github.com/loiclegoff/my-app-function-component/compare/step4bis-list_of_robots_with_related_parts_and_right_panel...step5-list_of_robots_with_related_parts_redux?diff=split)
+- [branch](https://github.com/loiclegoff/irc-react-2024-correction/tree/step5-list_of_robots_with_related_parts_redux)
+- [difference with the previous step](https://github.com/loiclegoff/irc-react-2024-correction/compare/step4bis-list_of_robots_with_related_parts_and_right_panel...step5-list_of_robots_with_related_parts_redux?diff=split)
 
 # Step : Advanced Practice
 
 ## Remove Redux to use native Context of react
 
-- [React Context Documentation](https://fr.reactjs.org/docs/context.html)
-- [Context Hook](https://reactjs.org/docs/hooks-reference.html#usecontext)
+- [React Context Documentation](https://react.dev/learn/passing-data-deeply-with-context)
+- [Context Hook](https://react.dev/reference/react/useContext)
 
 ## Memorization
 
@@ -473,7 +472,7 @@ Improve code base with memorization : useMemo, useCallback, memo.
 
 ## Lazy loading and Suspense
 
-[Documentation](https://reactjs.org/docs/react-api.html#reactsuspense)
+[Documentation](https://react.dev/reference/react/Suspense)
 
 # Docs, Sources and Inspirations
 
@@ -481,5 +480,5 @@ Improve code base with memorization : useMemo, useCallback, memo.
 - [Jacques Saraydaryan Tutorial](https://github.com/jacques-saraydaryan/front-end-react.js)
 - [Redux Basic Tutorial](https://redux.js.org/basics/basic-tutorial)
 - [Redux Hooks API Reference](https://react-redux.js.org/api/hooks)
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [React Documentation](https://react.dev/learn)
 - [JavaScript Documentation](https://developer.mozilla.org/fr/docs/Web/JavaScript/)
