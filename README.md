@@ -238,7 +238,7 @@ Others components : https://getbootstrap.com/docs/5.3/components/alerts/
 
 ## Fetch data
 
-A REST api is availaible at the following URL : https://www.robots.loiclegoff.com
+A REST api is availaible at the following URL : [https://www.robots.loiclegoff.com](https://robot-cpe-2024.cleverapps.io/)
 
 For this step you can use these endpoints:
 
