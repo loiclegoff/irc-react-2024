@@ -1,4 +1,4 @@
-# React Tutorial
+ # React Tutorial
 
 The essential guide to getting started with React. This walkthrough tutorial will have you building an application in React from scratch, learning about state, props, and components along the way.
 
@@ -238,7 +238,7 @@ Others components : https://getbootstrap.com/docs/5.3/components/alerts/
 
 ## Fetch data
 
-A REST api is availaible at the following URL : [https://www.robots.loiclegoff.com](https://robot-cpe-2024.cleverapps.io/)
+A REST api is availaible at the following URL : https://robot-cpe-2024.cleverapps.io
 
 For this step you can use these endpoints:
 
