@@ -1,4 +1,4 @@
- # React Tutorial
+# React Tutorial
 
 The essential guide to getting started with React. This walkthrough tutorial will have you building an application in React from scratch, learning about state, props, and components along the way.
 
@@ -22,7 +22,7 @@ The essential guide to getting started with React. This walkthrough tutorial wil
 Let's start by making a basic `index.html` file. We're going to load in three CDNs in the `head` - React, React DOM, and Babel. We're also going to make a `div` with an id called `root`, and finally we'll create a `script` tag where your custom code will live.
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -88,7 +88,7 @@ Finally, we're going to use the React DOM `render()` method to render the `App` 
 index.html
 
 ```jsx
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ```
 
 Here is the full code for our `index.html`.
@@ -96,7 +96,7 @@ Here is the full code for our `index.html`.
 index.html
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -116,9 +116,7 @@ index.html
         return <h1>Hello world!</h1>;
       };
 
-      ReactDOM.createRoot(document.getElementById('root')).render(
-        <App />
-      );
+      ReactDOM.createRoot(document.getElementById("root")).render(<App />);
     </script>
   </body>
 </html>
@@ -155,7 +153,7 @@ Open `index.html` and add bootstrap import to use css rules
 ## Exemple
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function App(props) {
   // state is initialized by a props
@@ -224,7 +222,7 @@ npm install react-bootstrap bootstrap
 Replace your elements that use bootstrap classnames with the correct component imported from `react-bootstrap`. Example to use the Button component :
 
 ```jsx
-import { Button } from 'react-bootstrap';
+import { Button } from "react-bootstrap";
 ```
 
 Others components : https://getbootstrap.com/docs/5.3/components/alerts/
@@ -354,7 +352,7 @@ In file `actions/index.js`, create action types and action creators
 /*
  * action types
  */
-export const UPDATE_ROBOTS = 'UPDATE_ROBOTS';
+export const UPDATE_ROBOTS = "UPDATE_ROBOTS";
 
 /*
  * action creators
@@ -377,7 +375,7 @@ You must create 4 actions:
 In file `reducers/robotReducer.js`, create action types and action creators
 
 ```jsx
-import { UPDATE_ROBOTS } from '../actions';
+import { UPDATE_ROBOTS } from "../actions";
 
 const initialState = {
   robots: [],
@@ -412,11 +410,11 @@ Add the store and the provider in `src/App`.
 You can add options to use ReduxDevTools on Firefox/Chrome:
 
 ```js
-const store = createStore(
-  globalReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ &&
-    window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+import { createStore } from "redux";
+import { composeWithDevTools } from "@redux-devtools/extension";
+import globalReducer from "./reducers";
+
+const store = createStore(globalReducer, composeWithDevTools());
 ```
 
 ## Add dispatchers and selector to be connected with the store
